@@ -1,0 +1,256 @@
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../assets/SourceSansPro-Regular.ttf') format('truetype');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 11px;
+  background-color: #efefef;
+}
+
+@media (min-width: 400px) {
+  html,
+  body {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 600px) {
+  html,
+  body {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 800px) {
+  html,
+  body {
+    font-size: 17px;
+  }
+}
+
+/******HEADER******/
+
+.header {
+  display: flex;
+  height: 10%;
+  min-height: 5rem;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #2e71ee;
+  color: #fff;
+}
+
+.logo-section {
+  white-space: nowrap;
+}
+
+.logo-img {
+  display: inline-block;
+  min-width: 2rem;
+  min-height: 2rem;
+  width: 2rem;
+  height: 2rem;
+  background: url('../assets/logo-1.svg') center no-repeat;
+  vertical-align: middle;
+}
+
+.logo-text {
+  display: inline-block;
+  font-size: 2rem;
+  margin: 0 1rem;
+  vertical-align: middle;
+}
+
+.authentication {
+  white-space: nowrap;
+}
+
+.auth__btn {
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  vertical-align: middle;
+  transition-duration: 0.2s;
+}
+
+.auth__btn:hover {
+  background-color: #fff;
+  color: #2e71ee;
+}
+
+.sign-in__btn {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: url('../assets/login.svg') center no-repeat;
+  background-size: contain;
+}
+
+.sign-in__btn p,
+.sign-up__btn {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .sign-in__btn {
+    width: auto;
+    height: auto;
+    background: none;
+  }
+  .sign-in__btn p {
+    display: inline-block;
+    margin: auto;
+  }
+  .sign-up__btn {
+    border: 1px solid #fff;
+  }
+}
+
+.exit__btn {
+}
+
+/******PAGE******/
+
+.page {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.upload__input {
+  display: none;
+}
+
+.upload__btn {
+  margin: 0;
+  padding: 1rem 2rem 1rem 4rem;
+  border: 2px solid #2e71ee;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  color: #2e71ee;
+  font-size: 2rem;
+  vertical-align: middle;
+  transition-duration: 0.2s;
+}
+
+.upload__icon {
+  width: 2rem;
+  height: 2rem;
+  margin-left: -2.5rem;
+  vertical-align: middle;
+}
+
+.upload__btn:hover {
+  background-color: #2e71ee;
+  color: #fff;
+}
+
+.upload__btn:hover path {
+  transition-duration: 0.2s;
+  fill: #fff;
+}
+
+#upload__error {
+  display: none;
+  font-size: 1.5rem;
+  color: #ee2e48;
+  transition-duration: 0.2s;
+}
+
+/******TABLE******/
+
+.table__container {
+  height: auto;
+  align-items: flex-start;
+}
+
+.table__wrapper {
+  width: 100%;
+  min-width: 30rem;
+  max-width: 40rem;
+  margin: 2rem auto;
+}
+
+.table {
+  width: 90%;
+  margin: 0 auto 1.5rem;
+  padding: 1rem;
+  border-collapse: separate;
+  border-spacing: 0 0.7rem;
+  font-size: 1.5rem;
+  background-color: #fff;
+  box-shadow: 0px 0.2rem 0.5rem 0px rgba(0, 0, 0, 0.3),
+    0px -0.1rem 0.5rem 0px rgba(0, 0, 0, 0.3);
+}
+
+.table__info {
+  border-collapse: separate;
+  border-spacing: 0 0.5rem;
+  width: 100%;
+}
+
+.info__cell {
+  width: 50%;
+  vertical-align: top;
+  color: rgb(0, 0, 0, 0.7);
+}
+
+.info__shop {
+  font-size: 2rem;
+  text-align: center;
+  color: #000;
+}
+
+.cell--left {
+  text-align: left;
+}
+
+.cell--right {
+  text-align: right;
+}
+
+.table__row {
+  vertical-align: top;
+}
+
+.minor-text {
+  font-size: 1.3rem;
+  color: rgb(0, 0, 0, 0.7);
+}
+
+.table__total {
+  font-weight: bold;
+}
+
+.table__payment {
+  width: 100%;
+}
+
+.table__fiscal {
+  width: 100%;
+}
+
+.table__fiscal tr {
+  vertical-align: bottom;
+}

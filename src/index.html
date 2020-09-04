@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Анализ чеков</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-section">
+            <a class="logo-img" href="#"></a>
+            <h1 class="logo-text">Анализ чеков</h1>
+        </div>
+        <div class="authentication">
+            <a href="#" class="user-name"></a>
+            <button class="auth__btn sign-in__btn">
+                <p>Войти</p>
+            </button>
+            <button class="auth__btn sign-up__btn">Регистрация</button>
+            <button class="auth__btn exit__btn">Выйти</button>
+        </div>
+    </header>
+    <section id="page" class="page">
+        <form id="upload__form" action="#">
+            <input id="upload__input" class="upload__input" type="file" accept="application/JSON">
+            <label for="upload__input" type="submit" class="upload__btn">
+                <svg class="upload__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="#2E71EE"
+                        d="M380 133L268 5a16 16 0 00-24 0L132 133a16 16 0 0012 27h64v208c0 9 7 16 16 16h64c9 0 16-7 16-16V160h64a16 16 0 0012-27z" />
+                    <path fill="#2E71EE" d="M432 352v96H80v-96H16v128c0 18 14 32 32 32h416c18 0 32-14 32-32V352h-64z" />
+                </svg>
+                Загрузить чек
+            </label>
+            <p id="upload__error">Невозможно прочитать файл</p>
+        </form>
+    </section>
+    <footer>
+        <nav class="menu footer-menu"></nav>
+    </footer>
+</body>
+
+</html>
