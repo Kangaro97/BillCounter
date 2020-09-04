@@ -1,1 +1,3 @@
 # BillCounter
+
+Pure js + Webpack
